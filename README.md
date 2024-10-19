@@ -1,3 +1,8 @@
+Here's the corrected version of the **README.md** file in a single markdown block with properly formatted code sections.
+
+---
+
+```md
 # Rule Engine with Abstract Syntax Tree (AST)
 
 This project implements a rule engine using an Abstract Syntax Tree (AST) to dynamically create, combine, and evaluate rules based on conditions such as user attributes (e.g., age, salary, department). The rule engine can be used to assess eligibility based on data input.
@@ -16,53 +21,67 @@ This project implements a rule engine using an Abstract Syntax Tree (AST) to dyn
 RuleEngine/
 │
 ├── src/
-│   ├── __init__.py
-│   ├── rule_engine.py         # Logic for rule creation, combination, and evaluation
-│   ├── ast.py                 # AST node structure and printing utility
-│   └── tests.py               # Unit tests for validating the rule engine
+│   ├── __init__.py             # Marks src as a package
+│   ├── rule_engine.py          # Logic for rule creation, combination, and evaluation
+│   ├── ast.py                  # AST node structure and printing utility
+│   └── tests.py                # Unit tests for validating the rule engine
 │
-├── requirements.txt           # Dependencies
-├── README.md                  # Project documentation
-└── .gitignore                 # Ignore unnecessary files (e.g., .pyc, virtual env files)
-Installation
-Clone the repository:
+├── requirements.txt            # Dependencies
+├── README.md                   # Project documentation
+└── .gitignore                  # Ignore unnecessary files (e.g., .pyc, virtual env files)
+```
 
-bash
-Copy code
-git clone https://github.com/yourusername/RuleEngineWithAST.git
-cd RuleEngineWithAST
-Install the dependencies:
+## Installation
 
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Creating and Combining Rules
-You can create rules using the create_rule function and combine multiple rules using combine_rules. For example:
+1. Clone the repository:
 
-python
-Copy code
+   ```bash
+   git clone https://github.com/yourusername/RuleEngineWithAST.git
+   cd RuleEngineWithAST
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+### Creating and Combining Rules
+
+You can create rules using the `create_rule` function and combine multiple rules using `combine_rules`. For example:
+
+```python
 from rule_engine import create_rule, combine_rules
 
 rule = create_rule("age > 30 AND department = 'Sales'")
 combined_rule = combine_rules(["age > 30", "salary > 50000"])
-Evaluating Rules
-The evaluate_rule function evaluates a rule against a data dictionary. Example:
+```
 
-python
-Copy code
+### Evaluating Rules
+
+The `evaluate_rule` function evaluates a rule against a data dictionary. Example:
+
+```python
 data = {"age": 35, "department": "Sales", "salary": 60000}
 result = evaluate_rule(rule, data)
 print(f"Rule evaluation result: {result}")  # Outputs: True
-Running Tests
+```
+
+### Running Tests
+
 Run the test cases to ensure the rule engine works as expected:
 
-bash
-Copy code
+```bash
 python src/tests.py
-Testing
+```
+
+## Testing
+
 To run all tests, use:
 
-bash
-Copy code
+```bash
 pytest src/tests.py
+```
+
