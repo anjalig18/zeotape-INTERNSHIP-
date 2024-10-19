@@ -1,8 +1,4 @@
-Here's the corrected version of the **README.md** file in a single markdown block with properly formatted code sections.
 
----
-
-```md
 # Rule Engine with Abstract Syntax Tree (AST)
 
 This project implements a rule engine using an Abstract Syntax Tree (AST) to dynamically create, combine, and evaluate rules based on conditions such as user attributes (e.g., age, salary, department). The rule engine can be used to assess eligibility based on data input.
