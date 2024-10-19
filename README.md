@@ -25,6 +25,7 @@ RuleEngine/
 ├── requirements.txt            # Dependencies
 ├── README.md                   # Project documentation
 └── .gitignore                  # Ignore unnecessary files (e.g., .pyc, virtual env files)
+└── MIT LICENSE                 # This project is licensed under the MIT License.
 ```
 
 ## Installation
